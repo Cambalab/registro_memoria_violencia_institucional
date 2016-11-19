@@ -22,3 +22,13 @@
   max-width: 960px;
   margin: 0 auto;
 }
+.content {
+  float: left;
+  width: 700px;
+}
+.sidebar {
+  margin-left: 720px;
+}
+google-map {
+  height: 300px;
+}

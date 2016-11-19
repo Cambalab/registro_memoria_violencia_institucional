@@ -1,0 +1,15 @@
+<h1>Lista de casos</h1>
+<div class="">
+  <input type="search" ng-model="expression" placeholder="Filtrar...">
+</div>
+<ul>
+  <li ng-repeat="dato in datos | filter : expression : anyPropertyKey">
+    <h3><a href="" ng-href="/#!/caso/{{ $index }}">{{ dato.Nombre }}</a></h3>
+    <cite>{{ dato.Infancia }}</cite>
+    <p>
+      {{ dato.Resumen }}
+    </p>
+    <h5>{{ dato.Lugar }}</h5>
+    <hr>
+  </li>
+</ul>

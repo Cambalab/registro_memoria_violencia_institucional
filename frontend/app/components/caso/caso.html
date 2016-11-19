@@ -1,0 +1,20 @@
+<div class="content">
+  <h1>{{ dato.Nombre }}</h1>
+  <cite>{{ dato.Infancia }}</cite>
+  <p>
+    {{ dato.Resumen }}
+  </p>
+  <h5>{{ dato.Lugar }}</h5>
+</div>
+<div class="sidebar">
+  contenido adicional
+  <br>
+  <google-map latitude="-34.638224" longitude="-58.381376" api-key="AIzaSyAkMTT3cQYD2XFfgtGQPmjd9OeMilKHYTo">
+    <google-map-marker latitude="{{dato.Lat}}" longitude="{{dato.Long}}"
+      draggable="true" title="{{ dato.Lugar }}"></google-map-marker>
+  </google-map>
+  <br>
+  fotos...
+  <br>
+  etc...
+</div>

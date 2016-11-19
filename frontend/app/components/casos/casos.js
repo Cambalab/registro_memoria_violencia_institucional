@@ -4,7 +4,7 @@ angular.module('myApp.casos', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/casos', {
-    templateUrl: 'casos/casos.html',
+    templateUrl: 'components/casos/casos.html',
     controller: 'View1Ctrl'
   });
 }])
@@ -13,5 +13,5 @@ angular.module('myApp.casos', ['ngRoute'])
   $http.get('data/data.json')
     .then(function(res){
       $scope.datos = res.data;
-        });
+    });
 }]);
