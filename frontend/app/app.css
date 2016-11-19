@@ -32,3 +32,11 @@
 google-map {
   height: 300px;
 }
+.thumbnail {
+  width: 150px;
+  float: left;
+  margin-right: 20px;
+}
+.casos {
+  list-style: none;
+}

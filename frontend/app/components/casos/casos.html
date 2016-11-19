@@ -2,8 +2,9 @@
 <div class="">
   <input type="search" ng-model="expression" placeholder="Filtrar...">
 </div>
-<ul>
+<ul class="casos">
   <li ng-repeat="dato in datos | filter : expression : anyPropertyKey">
+    <img src="{{dato.Fotos}}" alt="" class="thumbnail" />
     <h3><a href="" ng-href="/#!/caso/{{ $index }}">{{ dato.Nombre }}</a></h3>
     <cite>{{ dato.Infancia }}</cite>
     <p>
